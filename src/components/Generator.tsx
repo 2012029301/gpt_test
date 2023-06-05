@@ -23,6 +23,7 @@ export default () => {
   onMount(() => {
     let lastPostion = window.scrollY
 
+ 
     window.addEventListener('scroll', () => {
       const nowPostion = window.scrollY
       nowPostion < lastPostion && setStick(false)
